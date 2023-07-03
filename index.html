@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
+      <div class="inputBox">
+        <input type="text" id="passBox" value="" disabled />
+        <img src="Vector(4).png" id="copy" alt="" />
+      </div>
+      <div class="settings">
+        <div class="row">
+          <lable>Character Length</lable>
+          <span style="color: #a4ffaf; font-weight: 400" id="sliderValue">
+          </span>
+        </div>
+        <input type="range" id="inputRange" min="1" max="32" value="10" />
+
+        <div id="inputPreview">
+          <input
+            name="cssCheckbox"
+            id="uppercase"
+            type="checkbox"
+            class="css-checkbox"
+          />
+          <label for="uppercase">Include Uppercase Letters</label>
+
+          <input
+            name="cssCheckbox"
+            type="checkbox"
+            class="css-checkbox"
+            id="lowercase"
+          />
+          <label for="lowercase">Include Lowercase Letter</label>
+
+          <input
+            name="cssCheckbox"
+            id="numbers"
+            type="checkbox"
+            class="css-checkbox"
+          />
+          <label for="numbers">Include Numbers</label>
+
+          <input
+            name="cssCheckbox"
+            id="symbols"
+            type="checkbox"
+            class="css-checkbox"
+          />
+          <label for="symbols">Include Symbols</label>
+        </div>
+        <div class="strength">
+          <p>strength</p>
+          <section class="level" id="parent">
+            <div class="childDiv"></div>
+            <div class="childDiv"></div>
+            <div class="childDiv"></div>
+            <div class="childDiv"></div>
+          </section>
+        </div>
+        <button class="btn-generate" id="generateBtn">
+          Generate <i class="bx bx-right-arrow-alt"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
